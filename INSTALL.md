@@ -107,6 +107,9 @@ PHYSICAL_NETWORK=ext_br-sriov
 ## 3. Install
 
 ```
+Allow run sh file:
+ chmod +x *.sh
+Run installation:
 ./configure.sh
 select "aio" or "net and com" or "mul"
 ```
