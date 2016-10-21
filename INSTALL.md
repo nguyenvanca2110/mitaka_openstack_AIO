@@ -7,8 +7,8 @@
 
 ```
 cd ~/
-git clone http://114.71.50.187/openstack_script/openstack_script.git cloud
-cd cloud/liberty
+git clone https://github.com/nguyenvanca2110/mitaka_openstack_AIO.git mitaka
+cd mitaka
 ```
 
 ## 2. Configuration files.
