@@ -1,6 +1,6 @@
 # Welcome!
 
-OpenStack Installation script by DCN Lab
+OpenStack Installation AIO
 
 * **Version:** Mitaka
 
@@ -26,14 +26,7 @@ tenant_network_types = flat,vxlan,gre,vlan
 
 Installation instructions:
 
-http://114.71.50.187/openstack_script/openstack_script/blob/master/liberty/INSTALL.md
-
-
-## Issues:
-
-Please report issue at:
-
-http://114.71.50.187/openstack_script/openstack_script/issues
+https://github.com/nguyenvanca2110/mitaka_openstack_AIO/INSTALL.md
 
 
 ## External Resources:
@@ -48,8 +41,7 @@ https://github.com/openstack/tacker
 
 Tacker test guide:
 
-http://114.71.50.187/openstack_script/openstack_script/blob/master/liberty/TACKER_GUIDE.md
+https://github.com/nguyenvanca2110/mitaka_openstack_AIO/TACKER_GUIDE.md
 
 For help on usage, please send mail to
 
-<mailto:chonti@dcn.ssu.ac.kr> chonti.
