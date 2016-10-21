@@ -14,15 +14,15 @@ openstack project create --domain default --description "Service Project" servic
 openstack project create --domain default --description "NFV Project" nfv
 
 # Users
-openstack user create --domain default --password "$DEFAULT_PASS" --email yangun@dcn.ssu.ac.kr admin
-openstack user create --domain default --password "$DEFAULT_PASS" --email yangun@dcn.ssu.ac.kr glance
-openstack user create --domain default --password "$DEFAULT_PASS" --email yangun@dcn.ssu.ac.kr nova
-openstack user create --domain default --password "$DEFAULT_PASS" --email yangun@dcn.ssu.ac.kr neutron
-openstack user create --domain default --password "$DEFAULT_PASS" --email yangun@dcn.ssu.ac.kr cinder
-openstack user create --domain default --password "$DEFAULT_PASS" --email yangun@dcn.ssu.ac.kr heat
-openstack user create --domain default --password "$DEFAULT_PASS" --email yangun@dcn.ssu.ac.kr tacker
-openstack user create --domain default --password "$DEFAULT_PASS" --email yangun@dcn.ssu.ac.kr nfv_user
-##openstack user create --domain default --password "$DEFAULT_PASS" --email yangun@dcn.ssu.ac.kr swift
+openstack user create --domain default --password "$DEFAULT_PASS" --email nguyenvanca2110@gmail.com admin
+openstack user create --domain default --password "$DEFAULT_PASS" --email nguyenvanca2110@gmail.com glance
+openstack user create --domain default --password "$DEFAULT_PASS" --email nguyenvanca2110@gmail.com nova
+openstack user create --domain default --password "$DEFAULT_PASS" --email nguyenvanca2110@gmail.com neutron
+openstack user create --domain default --password "$DEFAULT_PASS" --email nguyenvanca2110@gmail.com cinder
+openstack user create --domain default --password "$DEFAULT_PASS" --email nguyenvanca2110@gmail.com heat
+openstack user create --domain default --password "$DEFAULT_PASS" --email nguyenvanca2110@gmail.com tacker
+openstack user create --domain default --password "$DEFAULT_PASS" --email nguyenvanca2110@gmail.com nfv_user
+##openstack user create --domain default --password "$DEFAULT_PASS" --email nguyenvanca2110@gmail.com swift
 
 # Roles
 openstack role create admin
@@ -99,13 +99,13 @@ openstack endpoint create --region RegionOne nfv-orchestration admin http://cont
 
 #Create the heat domain
 openstack domain create heat --description "Stack projects and users"
-openstack user create --domain heat --password "$DEFAULT_PASS" --email yangun@dcn.ssu.ac.kr heat_domain_admin
+openstack user create --domain heat --password "$DEFAULT_PASS" --email nguyenvanca2110@gmail.com heat_domain_admin
 openstack role add --domain heat --user heat_domain_admin admin
 
 
 if [ "$IS_TELEMETRY" == "1" ]; then
-openstack user create --domain default --password "$DEFAULT_PASS" --email yangun@dcn.ssu.ac.kr ceilometer
-openstack user create --domain default --password "$DEFAULT_PASS" --email yangun@dcn.ssu.ac.kr aodh
+openstack user create --domain default --password "$DEFAULT_PASS" --email nguyenvanca2110@gmail.com ceilometer
+openstack user create --domain default --password "$DEFAULT_PASS" --email nguyenvanca2110@gmail.com aodh
 openstack role add --project service --user ceilometer admin
 openstack role add --project service --user aodh admin
 openstack service create --name ceilometer --description "Telemetry" metering
