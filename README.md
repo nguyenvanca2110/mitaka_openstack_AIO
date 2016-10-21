@@ -43,5 +43,5 @@ Tacker test guide:
 
 https://github.com/nguyenvanca2110/mitaka_openstack_AIO/TACKER_GUIDE.md
 
-For help on usage, please send mail to
+
 
