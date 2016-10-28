@@ -10,6 +10,7 @@ Choose: admin
 Choose : Flat
 4. Physical Network (just have in Flat mode because Flat will make some bridges to connect with public network)
 Type: ext_br-ext 
+p/s: You can reference in "nano /etc/neutron/plugins/ml2/ml2_conf.ini"
 (Note: just for this script)
 5. Choose External Network
 And submit
